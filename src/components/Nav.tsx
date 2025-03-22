@@ -1,5 +1,8 @@
 "use client"
 
+import { Button } from "@/components/ui/button"
+import { NavigationMenu, NavigationMenuItem, NavigationMenuList } from "@/components/ui/navigation-menu"
+import menu from "@/data/menu"
 import { ReactElement } from "react"
 
 export default function Nav(): ReactElement {
@@ -11,24 +14,18 @@ export default function Nav(): ReactElement {
   }
 
   return (
-    <nav>
-      <ul className="flex gap-2">
-        <li>
-          <button type="button" className="cursor-pointer p-3" onClick={(): void => handleScroll("about")}>
-            À propos
-          </button>
-        </li>
-        <li>
-          <button type="button" className="cursor-pointer p-3" onClick={(): void => handleScroll("projects")}>
-            Projets
-          </button>
-        </li>
-        <li>
-          <button type="button" className="cursor-pointer p-3" onClick={(): void => handleScroll("contact")}>
-            Contact
-          </button>
-        </li>
-      </ul>
-    </nav>
+    <NavigationMenu>
+      <NavigationMenuList className="flex gap-2">
+        {menu.map(
+          (navItem): ReactElement => (
+            <NavigationMenuItem key={navItem.id} asChild>
+              <Button variant="ghost" className="cursor-pointer p-3" onClick={(): void => handleScroll(navItem.id)}>
+                {navItem.label}
+              </Button>
+            </NavigationMenuItem>
+          ),
+        )}
+      </NavigationMenuList>
+    </NavigationMenu>
   )
 }

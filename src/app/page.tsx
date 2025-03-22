@@ -3,13 +3,13 @@ import { ReactElement } from "react"
 export default function Home(): ReactElement {
   return (
     <main>
-      <section className="h-screen w-full bg-red-300" id="about">
+      <section className="flex h-screen w-full items-center justify-center" id="about">
         A propos
       </section>
-      <section className="h-screen w-full bg-blue-300" id="projects">
+      <section className="flex h-screen w-full items-center justify-center" id="projects">
         Projets
       </section>
-      <section className="h-screen w-full bg-green-300" id="contact">
+      <section className="flex h-screen w-full items-center justify-center" id="contact">
         Contact
       </section>
     </main>
