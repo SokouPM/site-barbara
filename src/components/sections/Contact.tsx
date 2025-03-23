@@ -1,6 +1,7 @@
 import { BoxReveal } from "@/components/animated/BoxReveal"
 import { ReactElement } from "react"
 import { LuCar, LuFile, LuHouse, LuMail, LuPhone } from "react-icons/lu"
+import { TbMailUp } from "react-icons/tb"
 
 interface ContactProps {
   id: string
@@ -49,7 +50,9 @@ export default function Contact({ id }: ContactProps): ReactElement {
                   </li>
                   <li className="flex items-center gap-2">
                     <LuMail className="h-8 w-8 overflow-visible rounded-full bg-background p-2 text-primary" />
-                    <a href="mailto:barbarabidot1994@gmail.com">barbarabidot1994@gmail.com</a>
+                    <a href="mailto:barbarabidot1994@gmail.com" className="flex items-center gap-1 underline">
+                      barbarabidot1994@gmail.com <TbMailUp className="text-xs" />
+                    </a>
                   </li>
                   <li className="flex items-center gap-2">
                     <LuFile className="h-8 w-8 overflow-visible rounded-full bg-background p-2 text-primary" />
