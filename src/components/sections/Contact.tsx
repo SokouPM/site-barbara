@@ -1,7 +1,6 @@
 import { BoxReveal } from "@/components/animated/BoxReveal"
-import { Button } from "@/components/ui/button"
 import { ReactElement } from "react"
-import { LuCandy, LuCar, LuDownload, LuFile, LuFileBox, LuHouse, LuMail, LuNut, LuPhone } from "react-icons/lu"
+import { LuCar, LuFile, LuHouse, LuMail, LuPhone } from "react-icons/lu"
 
 interface ContactProps {
   id: string
