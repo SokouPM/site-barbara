@@ -15,24 +15,25 @@ export default function Contact({ id }: ContactProps): ReactElement {
       </BoxReveal>
       <div className="flex flex-col items-start justify-between gap-10 md:flex-row md:gap-20 lg:flex-row">
         <div className="flex gap-10 md:w-1/2 md:gap-20">
-          <a href="/contact/cv.pdf" target="_blank" rel="noreferrer" className="1/3 text-center">
+          <a
+            href="/contact/cv.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="1/3 text-center transition-all hover:scale-110"
+          >
             <img src="/contact/cv.png" alt="CV de Barbara Bidot, Technicienne lumière" className="mb-10 shadow-pic" />
-            <Button className="cursor-pointer">
-              <LuDownload />
-              Curriculum Vitae
-            </Button>
           </a>
-          <a href="/contact/fiche-renseignement.pdf" target="_blank" rel="noreferrer" className="1/2 text-center">
+          <a
+            href="/contact/fiche-renseignement.pdf"
+            target="_blank"
+            rel="noreferrer"
+            className="1/2 text-center transition-all hover:scale-110"
+          >
             <img
               src="/contact/fiche-renseignement.png"
               alt="Fiche de renseignements de Barbara Bidot, Technicienne lumière"
               className="mb-10 shadow-pic"
             />
-            <Button className="cursor-pointer">
-              <LuDownload />
-              <span className="hidden md:block">Fiche de renseignements</span>
-              <span className="block md:hidden">Fiche rens.</span>
-            </Button>
           </a>
         </div>
         <div className="md:w-2/3">
