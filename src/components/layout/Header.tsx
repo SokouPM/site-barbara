@@ -1,4 +1,4 @@
-import Nav from "@/components/Nav"
+import Nav from "@/components/layout/Nav"
 import { ReactElement } from "react"
 
 export default function Header(): ReactElement {
