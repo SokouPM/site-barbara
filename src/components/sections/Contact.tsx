@@ -30,7 +30,8 @@ export default function Contact({ id }: ContactProps): ReactElement {
             />
             <Button className="cursor-pointer">
               <LuDownload />
-              Fiche de renseignements
+              <span className="hidden md:block">Fiche de renseignements</span>
+              <span className="block md:hidden">Fiche rens.</span>
             </Button>
           </a>
         </div>
