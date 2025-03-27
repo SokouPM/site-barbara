@@ -7,7 +7,7 @@ interface AboutProps {
 
 export default function About({ id }: AboutProps): ReactElement {
   return (
-    <section className="min-h-screen w-full pt-26 md:pt-32" id={id}>
+    <section className="min-h-screen w-full pt-26 md:pt-40" id={id}>
       <BoxReveal width="100%">
         <h2 className="mb-8 self-center text-center font-bold text-5xl text-primary md:mb-14">À propos de moi</h2>
       </BoxReveal>

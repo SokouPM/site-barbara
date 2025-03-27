@@ -12,21 +12,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet"
 import menu from "@/data/menu"
+import useWindowSize from "@/hooks/useWindowSize"
 import { ReactElement, useEffect, useState } from "react"
 import { LuMenu, LuX } from "react-icons/lu"
 
 export default function Nav(): ReactElement {
-  const [windowWidth, setWindowWidth] = useState<number>(0)
-
-  useEffect((): (() => void) => {
-    const handleResize = (): void => {
-      setWindowWidth(window.innerWidth)
-    }
-
-    handleResize()
-    window.addEventListener("resize", handleResize)
-    return (): void => window.removeEventListener("resize", handleResize)
-  }, [])
   const handleScroll = (sectionId: string): void => {
     const section = document.getElementById(sectionId)
     if (section) {
@@ -34,7 +24,7 @@ export default function Nav(): ReactElement {
     }
   }
 
-  if (windowWidth < 640) {
+  if (useWindowSize() < 640) {
     return (
       <Sheet>
         <SheetTrigger asChild>

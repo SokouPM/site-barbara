@@ -17,7 +17,7 @@ interface RootLayoutProps {
 export default function RootLayout({ children }: RootLayoutProps): ReactElement {
   return (
     <html lang="fr">
-      <body className="relative flex min-h-screen w-screen flex-col">
+      <body className="relative flex min-h-screen w-screen flex-col overflow-x-hidden">
         <Header />
         {children}
         <Footer />

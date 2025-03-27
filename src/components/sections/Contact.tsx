@@ -1,6 +1,6 @@
 import { BoxReveal } from "@/components/animated/BoxReveal"
 import { ReactElement } from "react"
-import { LuCar, LuFile, LuHouse, LuMail, LuPhone } from "react-icons/lu"
+import { LuFile, LuHouse, LuMail, LuPhone } from "react-icons/lu"
 import { TbMailUp } from "react-icons/tb"
 
 interface ContactProps {
@@ -9,7 +9,7 @@ interface ContactProps {
 
 export default function Contact({ id }: ContactProps): ReactElement {
   return (
-    <section className="min-h-screen w-full pt-26 md:pt-32" id={id}>
+    <section className="min-h-screen w-full pt-26 md:pt-40" id={id}>
       <BoxReveal width="100%">
         <h2 className="mb-8 self-center text-center font-bold text-5xl text-primary md:mb-14">Me contacter</h2>
       </BoxReveal>
@@ -36,7 +36,7 @@ export default function Contact({ id }: ContactProps): ReactElement {
             />
           </a>
         </div>
-        <div className="md:w-2/3">
+        <div className="mb-10 w-full md:mb-0 md:w-2/3">
           <BoxReveal width="100%">
             <div className="bg-primary p-10 text-primary-foreground">
               <BoxReveal>
@@ -62,10 +62,6 @@ export default function Contact({ id }: ContactProps): ReactElement {
                   <li className="flex items-center gap-2">
                     <LuHouse className="h-8 w-8 overflow-visible rounded-full bg-background p-2 text-primary" />
                     Châtillon, 92320
-                  </li>
-                  <li className="flex items-center gap-2">
-                    <LuCar className="h-8 w-8 overflow-visible rounded-full bg-background p-2 text-primary" />
-                    Permis B
                   </li>
                 </ul>
               </BoxReveal>
