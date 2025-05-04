@@ -39,7 +39,7 @@ export default function About({ id }: AboutProps): ReactElement {
             <ul className="list-disc pl-5">
               <li>Préparation, stockage et entretien du matériel</li>
               <li>Entretien et organisation de la salle</li>
-              <li>Montage des équipements lumière et configuration du système DMX</li>
+              <li>Montage des équipements lumière et configuration du protocole DMX</li>
               <li>Focus lumière pour un rendu optimal</li>
               <li>Installation du circuit électrique en suivant les consignes du chef électro ou du régisseur</li>
               <li>Mise en place d’écrans LCD, de cyclos et de vidéoprojecteurs</li>
