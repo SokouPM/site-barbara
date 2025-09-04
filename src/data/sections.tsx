@@ -1,6 +1,6 @@
-import About from "@/components/sections/About"
-import Contact from "@/components/sections/Contact"
-import Projects from "@/components/sections/Projects"
+import About from "@/components/sections/about"
+import Contact from "@/components/sections/contact"
+import Projects from "@/components/sections/projects"
 import { ReactNode } from "react"
 
 interface Section {
@@ -16,15 +16,15 @@ const sections: Section[] = [
     component: <About id="about" />,
   },
   {
+    label: "Projets",
+    id: "projects",
+    component: <Projects id="projects" />,
+  },
+  {
     label: "Contact",
     id: "contact",
     component: <Contact id="contact" />,
   },
-  // {
-  //   label: "Projets",
-  //   id: "projects",
-  //   component: <Projects id="projects" />,
-  // },
 ]
 
 export default sections
